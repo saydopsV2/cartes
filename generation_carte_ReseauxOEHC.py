@@ -39,4 +39,4 @@ colormap = branca.colormap.linear.YlOrRd_09.scale(min_diam, max_diam)
 colormap.caption = "Diamètre des canalisations"
 colormap.add_to(m)
 
-m.save('map.html')
+m.save('canalisationsCorse.html')
