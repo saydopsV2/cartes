@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Génération de carte</title>
 </head>
-<body>
-    <a href="canalisationsCorse.html">Canalisation du reseaux Corse</a>
-    <a href="parcelles.html">Parcelles agricoles Bio Référencé à la PAC</a>
-    <a href="vol.html">cambriolages et tentatives de cambriolages de logements enregistrés par la police et la gendarmerie nationales</a>
-</body>
+
+<body class="flex flex-wrap items-center justify-center min-h-screen bg-gray-900">
+    
+    <a href="canalisationsCorse.html" class="max-w-sm h-96 m-4 bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg"> 
+        <!-- Image -->
+        <div class="bg-cyan-500 p-2">
+            <img src="/img/corse.png" alt="canalisations corse" class="w-full rounded-lg">
+        </div>
+
+        <!-- Content -->
+        <div class="p-4">
+            <h2 class="text-xl font-bold flex items-center text-center">
+                Tracé des canalisations du réseau OEHC en 2023
+            </h2>
+            <p class="text-gray-400 text-s mt-2 text-center">
+                Vous y retrouverez en couleur le diamètre des tuyaux
+            </p>
+
+            <!-- Tags -->
+            <div class="mt-4 flex space-x-2">
+                <span class="bg-gray-700 text-cyan-300 text-sm px-3 py-1 rounded-full">Map</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="canalisationsCorse.html" class="max-w-sm h-96 m-4 bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg"> 
+        <!-- Image -->
+        <div class="bg-cyan-500 p-2">
+            <img src="/img/parcelles.png" alt="carte parcelle" class="w-full rounded-lg">
+        </div>
+
+        <!-- Content -->
+        <div class="p-4">
+            <h2 class="text-xl font-bold flex items-center text-center">
+                Parcelles en Agriculture Biologique (AB) déclarées à la PAC en 2023
+            </h2>
+            <p class="text-gray-400 text-s mt-2 text-center">
+                Vous y retrouverez en couleur la superficie des champs en hectar
+            </p>
+
+            <!-- Tags -->
+            <div class="mt-4 flex space-x-2">
+                <span class="bg-gray-700 text-cyan-300 text-sm px-3 py-1 rounded-full">Map</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="canalisationsCorse.html" class="max-w-sm h-96 m-4 bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg"> 
+        <!-- Image -->
+        <div class="bg-cyan-500 p-2">
+            <img src="/img/vol.png" alt="carte vol" class="w-full rounded-lg">
+        </div>
+
+        <!-- Content -->
+        <div class="p-4">
+            <h2 class="text-xl font-bold flex items-center text-center">
+                Tentatives de cambriolages de logements enregistrés par la police et la gendarmerie nationales en 2022
+            </h2>
+            <p class="text-gray-400 text-s mt-2 text-center">
+                Vous retrouverez un layer pour changer de vue
+            </p>
+
+            <!-- Tags -->
+            <div class="mt-4 flex space-x-2 w-40">
+                <span class="bg-gray-700 text-cyan-300 text-sm px-3 py-1 rounded-full">HeatMap</span>
+                <span class="bg-gray-700 text-cyan-300 text-sm px-3 py-1 rounded-full">Map</span>
+            </div>
+        </div>
+    </a>
+</body> 
 </html>
